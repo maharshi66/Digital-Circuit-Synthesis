@@ -1,0 +1,11 @@
+inputs a 4 b 4 c 4 d 4 e 4 f 4 g 4 h 4
+outputs i 4
+regs    t0 4  t1 4  t2 4  t3 4  t4 4  t5 4 
+op1 MULT 4 a b t0
+op2 MULT 4 c d t1
+op3 MULT 4 e f t2
+op4 MULT 4 t0 t1 t3
+op5 MULT 4 g t2 t4
+op6 SUB  4 t3 h t5
+op7 SUB  4 t5 t4 i
+end
